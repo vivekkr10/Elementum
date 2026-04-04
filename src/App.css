@@ -1,0 +1,17 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@font-face {
+  font-family: 'Gerbil';
+  src: url('/src/assets/fonts/gerbil.otf') format('opentype');
+  font-weight: 400;
+}
+
+.gerbil {
+  font-family: 'Gerbil', sans-serif;
+}
+
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+}
