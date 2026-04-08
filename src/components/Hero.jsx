@@ -85,14 +85,14 @@ const Hero = () => {
               <div className="flex-1 relative">
                 <div className="hidden md:block w-37 h-37 overflow-hidden rounded-full absolute bottom-6 -z-10">
                   <img
-                    src="/images/image1.jpg"
+                    src="/images/image1.png"
                     alt="hero image"
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <div className="w-37 h-37 overflow-hidden rounded-full absolute top-23 right-14 border-5 border-white">
+                <div className="w-37 h-37 overflow-hidden rounded-full absolute top-23 right-14">
                   <img
-                    src="/images/image2.jpg"
+                    src="/images/image2.png"
                     alt="hero image"
                     className="w-full h-full object-cover"
                   />
@@ -103,14 +103,14 @@ const Hero = () => {
               <div className="flex-1 relative">
                 <div className="hidden md:block w-37 h-37 overflow-hidden rounded-full absolute left-8">
                   <img
-                    src="/images/image3.jpg"
+                    src="/images/image3.png"
                     alt="hero image"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="w-37 h-37 overflow-hidden rounded-full absolute bottom-0 right-10">
                   <img
-                    src="/images/image4.jpg"
+                    src="/images/image4.png"
                     alt="hero image"
                     className="w-full h-full object-cover"
                   />
@@ -121,14 +121,14 @@ const Hero = () => {
               <div className="flex-1 relative">
                 <div className="hidden md:block w-37 h-37 overflow-hidden rounded-full absolute top-10 left-2 -z-10">
                   <img
-                    src="/images/image5.jpg"
+                    src="/images/image5.png"
                     alt="hero image"
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <div className="w-37 h-37 overflow-hidden rounded-full absolute bottom-15 right-8 border-5 border-white">
+                <div className="w-37 h-37 overflow-hidden rounded-full absolute bottom-15 right-8">
                   <img
-                    src="/images/image6.jpg"
+                    src="/images/image6.png"
                     alt="hero image"
                     className="w-full h-full object-cover"
                   />
@@ -139,14 +139,14 @@ const Hero = () => {
               <div className="flex-1 relative">
                 <div className="w-37 h-37 overflow-hidden rounded-full absolute">
                   <img
-                    src="/images/image7.jpg"
+                    src="/images/image7.png"
                     alt="hero image"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="w-37 h-37 overflow-hidden rounded-full absolute right-0 bottom-12">
                   <img
-                    src="/images/image8.jpg"
+                    src="/images/image8.png"
                     alt="hero image"
                     className="w-full h-full object-cover"
                   />
