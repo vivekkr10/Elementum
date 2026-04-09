@@ -4,16 +4,16 @@ const Features = () => {
   return (
     <div>
       {/* Features section */}
-      <section className="w-full flex justify-center relative">
-        <div className="py-18 w-[85%] relative">
+      <section className="features">
+        <div className="features__container">
           {/* 1st feature */}
-          <div className="flex flex-col gap-y-5 lg:flex-row items-center justify-between px-2.5">
+          <div className="feature-block">
             <div className="">
-              <h1 className="gerbil text-3xl xl:text-4xl tracking-wide leading-13">
-                <span className="relative inline-block">
+              <h1 className="feature-block__title gerbil">
+                <span className="feature-block__title-highlight">
                   Tomorrow
                   <svg
-                    className="absolute left-0 -bottom-2 w-full z-[-1]"
+                    className="feature-block__svg-underline"
                     viewBox="0 0 372 33"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -26,26 +26,26 @@ const Features = () => {
                   </svg>
                 </span>{" "}
                 should <br /> be better than
-                <span className="relative inline-block px-6 pb-3">
+                <span className="feature-block__title-highlight feature-block__title-highlight--px">
                   <svg
                     width="300"
                     height="81"
                     viewBox="0 0 340 81"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
-                    className="absolute -z-10 left-3 -top-1"
+                    className="feature-block__svg-bg1"
                   >
                     <rect width="170" height="61" rx="40.5" fill="#D7EEDD" />
                   </svg>
                   today
                 </span>
               </h1>
-              <p className="inter max-w-[480px] mt-1 tracking-tight [word-spacing:1.7px]">
+              <p className="feature-block__desc inter">
                 We are a team of strategists, designers communicators,
                 researchers. Togeather, we belive that progress only happens
                 when you refuse to play things safe.
               </p>
-              <span className="inter mt-5 text-sm flex gap-2 items-center tracking-tight">
+              <span className="feature-block__link inter">
                 Read more
                 <svg
                   width="95"
@@ -53,7 +53,7 @@ const Features = () => {
                   viewBox="0 0 145 8"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                  className="mt-2"
+                  className="feature-block__link-svg"
                 >
                   <path
                     d="M144.354 4.03556C144.549 3.8403 144.549 3.52372 144.354 3.32845L141.172 0.146473C140.976 -0.0487893 140.66 -0.0487893 140.464 0.146473C140.269 0.341735 140.269 0.658318 140.464 0.85358L143.293 3.68201L140.464 6.51043C140.269 6.7057 140.269 7.02228 140.464 7.21754C140.66 7.4128 140.976 7.4128 141.172 7.21754L144.354 4.03556ZM0 3.68201V4.18201H144V3.68201V3.18201H0V3.68201Z"
@@ -62,15 +62,15 @@ const Features = () => {
                 </svg>
               </span>
             </div>
-            <div className="w-70 md:w-100 relative">
-              <img src="/images/feature1.png" alt="feature image" />
+            <div className="feature-block__image-container">
+              <img src="/images/feature1.png" alt="feature image" className="feature-block__image" />
               <svg
                 width="152"
                 height="220"
                 viewBox="0 0 233 227"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className="absolute top-0 -right-15 -z-10"
+                className="feature-block__decoration feature-block__decoration--1"
               >
                 <path
                   d="M45.3254 -2.02656e-06L232.277 40.5018L186.952 226.343L4.78625e-05 185.841L45.3254 -2.02656e-06Z"
@@ -81,19 +81,12 @@ const Features = () => {
           </div>
 
           {/* 2nd feature */}
-          <div className="flex flex-col gap-y-5 lg:flex-row-reverse items-center justify-between px-2.5 py-28">
+          <div className="feature-block feature-block--reverse feature-block--py-28">
             <div>
-              <h1 className="gerbil text-3xl xl:text-4xl tracking-wide leading-13 lg:pl-5.5">
-                <span className="relative inline-block">
+              <h1 className="feature-block__title feature-block__title--padded gerbil">
+                <span className="feature-block__title-highlight">
                   <svg
-                    className="absolute z-[-1]"
-                    style={{
-                      top: "50%",
-                      left: "50%",
-                      transform: "translate(-50%, -50%)",
-                      width: "110%",
-                      height: "120%",
-                    }}
+                    className="feature-block__svg-bg2"
                     viewBox="0 0 172 80"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -103,10 +96,10 @@ const Features = () => {
                   See
                 </span>{" "}
                 how we can <br /> help you{" "}
-                <span className="relative inline-block">
+                <span className="feature-block__title-highlight">
                   Progress
                   <svg
-                    className="absolute left-0 -bottom-1 w-full z-[-1]"
+                    className="feature-block__svg-underline"
                     viewBox="0 0 372 33"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -119,12 +112,12 @@ const Features = () => {
                   </svg>
                 </span>
               </h1>
-              <p className="inter max-w-[480px] tracking-tighter [word-spacing:3px] lg:pl-5.5 py-4.5">
+              <p className="feature-block__desc feature-block__desc--alt feature-block__desc--padded inter">
                 We add a layer of fearless insights and action that allows
                 change makers to accelerate their progress in areas such as
                 brand, design digital, comms and social research.
               </p>
-              <span className="inter text-sm flex gap-2 items-center tracking-tight lg:pl-5.5">
+              <span className="feature-block__link feature-block__link--padded inter">
                 Read more
                 <svg
                   width="95"
@@ -132,7 +125,7 @@ const Features = () => {
                   viewBox="0 0 145 8"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                  className="mt-2"
+                  className="feature-block__link-svg"
                 >
                   <path
                     d="M144.354 4.03556C144.549 3.8403 144.549 3.52372 144.354 3.32845L141.172 0.146473C140.976 -0.0487893 140.66 -0.0487893 140.464 0.146473C140.269 0.341735 140.269 0.658318 140.464 0.85358L143.293 3.68201L140.464 6.51043C140.269 6.7057 140.269 7.02228 140.464 7.21754C140.66 7.4128 140.976 7.4128 141.172 7.21754L144.354 4.03556ZM0 3.68201V4.18201H144V3.68201V3.18201H0V3.68201Z"
@@ -141,8 +134,8 @@ const Features = () => {
                 </svg>
               </span>
             </div>
-            <div className="relative w-70 md:w-100">
-              <img src="/images/feature2.png" alt="feature image" />
+            <div className="feature-block__image-container">
+              <img src="/images/feature2.png" alt="feature image" className="feature-block__image" />
               {/* triangle 1 */}
               <svg
                 width="238"
@@ -150,7 +143,7 @@ const Features = () => {
                 viewBox="0 0 238 201"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className="absolute w-40 -right-6 -bottom-11 z-10"
+                className="feature-block__decoration feature-block__decoration--2"
               >
                 <path
                   d="M118.646 0L237.291 200.25H3.05176e-05L118.646 0Z"
@@ -164,7 +157,7 @@ const Features = () => {
                 viewBox="0 0 238 201"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className="absolute w-40 -left-3 -top-9 -z-10"
+                className="feature-block__decoration feature-block__decoration--3"
               >
                 <path
                   d="M118.646 0L237.291 200.25H3.05176e-05L118.646 0Z"
@@ -182,7 +175,7 @@ const Features = () => {
             viewBox="0 0 1483 654"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="absolute top-75 right-0 -z-10"
+            className="features__zigzag"
           >
             <g filter="url(#filter0_d_2_9)">
               <path

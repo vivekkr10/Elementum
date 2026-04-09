@@ -2,13 +2,13 @@ import React from "react";
 
 const Offer = () => {
   return (
-    <div className="relative">
+    <div className="offer">
       {/* offer section */}
-      <section className="w-full flex justify-center relative">
-        <div className="py-18 w-[85%] relative px-2">
-          <h1 className="gerbil text-3xl md:text-5xl lg:text-7xl tracking-tighter leading-18">
+      <section className="offer__section">
+        <div className="offer__container">
+          <h1 className="offer__title gerbil">
             What we can <br />
-            <span className="relative inline-block">
+            <span className="offer__title-highlight">
               offer
               <svg
                 width="240"
@@ -16,7 +16,7 @@ const Offer = () => {
                 viewBox="0 0 372 33"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className="absolute -z-10 -bottom-6"
+                className="offer__title-svg"
               >
                 <path
                   d="M45.0339 1.5H336.4L0.0641632 15.9H371.064L183.066 31.5"
@@ -27,13 +27,13 @@ const Offer = () => {
             </span>{" "}
             you!
           </h1>
-          <div className="mt-18">
-            <div className="flex justify-between border-t border-gray-300 py-8">
-              <h3 className="inter lg:text-lg tracking-wider hidden md:block">
+          <div className="offer__list">
+            <div className="offer__item">
+              <h3 className="offer__item-subtitle inter">
                 Office of multiple <br />
                 interest content
               </h3>
-              <h2 className="gerbil text-xl md:text-2xl lg:text-3xl xl:text-4xl flex gap-20 xl:gap-33 items-center">
+              <h2 className="offer__item-title gerbil">
                 Colaborative & partnership
 
                 {/* arrow */}
@@ -51,12 +51,12 @@ const Offer = () => {
                 </svg>
               </h2>
             </div>
-            <div className="flex justify-between border-t border-gray-300 py-8">
-              <h3 className="inter lg:text-lg tracking-wider hidden md:block">
+            <div className="offer__item">
+              <h3 className="offer__item-subtitle inter">
                 The hanger US Air force <br />
                 digital experimental
               </h3>
-              <h2 className="gerbil text-xl md:text-2xl lg:text-3xl xl:text-4xl flex gap-20 xl:gap-33 items-center">
+              <h2 className="offer__item-title gerbil">
                 We talk about our weight
 
                 {/* arrow */}
@@ -74,13 +74,13 @@ const Offer = () => {
                 </svg>
               </h2>
             </div>
-            <div className="flex justify-between border-t border-b border-gray-300 py-8">
-              <h3 className="inter lg:text-lg tracking-wider hidden md:block">
+            <div className="offer__item offer__item--last">
+              <h3 className="offer__item-subtitle inter">
                 Delta faucet content,
                 <br />
                 social, digital
               </h3>
-              <h2 className="gerbil text-xl md:text-2xl lg:text-3xl xl:text-4xl flex gap-20 xl:gap-33 items-center relative">
+              <h2 className="offer__item-title gerbil">
                 Piloting digital confidence
 
                 {/* arrow */}
@@ -100,7 +100,7 @@ const Offer = () => {
                 <img
                   src="/images/colorful.png"
                   alt=""
-                  className="absolute -z-10 w-28 left-93 hidden lg:block"
+                  className="offer__item-sphere"
                 />
               </h2>
             </div>
@@ -115,7 +115,7 @@ const Offer = () => {
         viewBox="0 0 864 654"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className="absolute -top-79 right-0 -z-10"
+        className="offer__zigzag"
       >
         <g filter="url(#filter0_d_1_158)">
           <path
